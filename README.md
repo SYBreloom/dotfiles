@@ -3,7 +3,15 @@ My dotfiles configuration
 
 `tmux` `tmux.conf`
 
+```bash
+cp tmux.conf ~/.tmux.conf
+tmux source ~/.tmux.conf
+```
+
 `vim` `vimrc`
 
-`bash` `bashrc`
+```bash
+cp vimrc ~/.vimrc
+```
 
+`bash` `bashrc`
