@@ -41,6 +41,10 @@ set incsearch
 set ignorecase
 set smartcase
 
+"jump to the last position when reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 
 set autoread " warn if the file editor by other process
 set listchars=tab:»·,trail:· " set list to see tabs and non-breakable spaces
