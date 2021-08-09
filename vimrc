@@ -52,9 +52,10 @@ set list
 set wildmenu
 set wildmode=longest:list,full
 
-call plug#begin('~/.vim/plugged')
-Plug 'itchyny/lightline.vim'
-call plug#end()
+" plugin(s)
+" call plug#begin('~/.vim/plugged')
+" Plug 'itchyny/lightline.vim'
+" call plug#end()
 
 set nu
 
