@@ -59,6 +59,11 @@ set wildmode=longest:list,full
 
 set nu
 
+" set fdm=manual
+set foldmethod=indent " fold according to indent
+au BufWinLeave * silent mkview " save the view when closing a file
+au BufWinEnter * silent loadview " load the view when opening a file
+
 " map jj to output <esc>
 inoremap jj <esc>
 imap ( ()<ESC>i
